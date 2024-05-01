@@ -29,7 +29,7 @@
                     <li class="nav-item"><a class="nav-link" href="#page-top">Home</a></li>
                         <li class="nav-item"><a class="nav-link " href="#about">Company’s Profile</a></li>
                         <li class="nav-item"><a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal" href="">Reservation</a></li>
-                        <li class="nav-item"><a class="nav-link "  href="displayresrvation.php" >Reserved information</a></li>
+                        <li class="nav-item"><a class="nav-link "  href="reservations_list.php" >Reserved information</a></li>
                         <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>
                     </ul>
                 </div>
@@ -43,7 +43,8 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-      <form  method="post" action="dbh/backend.php">
+      <form method="post" action="index.php?action=processReservation">
+
        
     <div class="row">
         <div class="col-lg-6">
@@ -310,3 +311,4 @@ function validateDateInputs() {
   </script>
     </body>
 </html>
+
